@@ -9,7 +9,9 @@
 #include "seats.hpp"
 
 class Seat {
-public:
-    float price;
-    int row;
+    public:
+        float price;
+        int column;
+        int row;
+        int occupied;
 };
