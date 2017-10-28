@@ -12,10 +12,17 @@
 class Seat
 {
 public:
-
     float price;
     int row;
     int column;
     int occupied;
     
 };
+//
+//    Seat::Seat(float a, int b, int c, int d)
+//    {
+//        price = a;
+//        row = b;
+//        column = c;
+//        occupied = d;
+//    }

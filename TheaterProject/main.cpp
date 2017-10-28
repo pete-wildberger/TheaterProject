@@ -33,28 +33,25 @@ int main(int argc, const char * argv[]) {
             
         }
     }
-
+//    loop to display whether seats are available or not
+    std::cout.setf(std::ios::fixed | std::ios::showpoint | std::ios::left);
+    for(int row = 0; row < chairs_in_row; row++){
+        std::cout << "row "<< (row + 1)<< " ";
+        for(int column = 0; column < row_of_chairs; column++){
+            if(chairArray[row][column].occupied  == 0){
+            std::cout << '#';
+            } else {
+            std::cout << '*';
+            }
+            }
+         std::cout << std::endl;
+        }
     return 0;
 }
-// functino to detirm the Seat object's price property
+// function to determin the Seat object's price property
 float askPrice(){
     float price;
     std::cout << "How much is tonight's show? ";
     std::cin >> price;
     return price;
-}
-void displaySeats(class Seat arr[], int cRows, int cColumns){
-    //    loop to display whether seats are available or not
-    std::cout.setf(std::ios::fixed | std::ios::showpoint | std::ios::left);
-    for(int row = 0; row < cRows; row++){
-        std::cout << "row "<< row << " ";
-        for(int column = 0; column < cColumns; column++){
-            if(arr[row][column].occupied  == 0){
-                std::cout << '#';
-            } else {
-                std::cout << '*';
-            }
-        }
-        std::cout << std::endl;
-    }
 }
