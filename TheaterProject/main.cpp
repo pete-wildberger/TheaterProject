@@ -18,13 +18,14 @@ int main(int argc, const char * argv[]) {
 //    define amount of rows and columns in the theater
     int chairs_in_row = 4;
     int row_of_chairs = 4;
+    float price = 15.00;
     class Seat chairArray[row_of_chairs][chairs_in_row];
     
     for(int row = 0; row < chairs_in_row; row++){
         std::cout << "row "<< row << " ";
         for(int column = 0; column < row_of_chairs; column++){
-            chairArray[row][column] = *new Seat;
-            chairArray[row][column].occupied = 1;
+            chairArray[row][column] = *new Seat(price, row, column, 0);
+            
         }
     }
 //    loop to display whether seats are available or not

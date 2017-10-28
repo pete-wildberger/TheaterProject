@@ -8,7 +8,15 @@
 
 #ifndef seats_hpp
 #define seats_hpp
-
-#include <stdio.h>
+class Seat
+{
+public:
+    Seat();
+    Seat(float, int, int, int);
+    float price;
+    int row;
+    int column;
+    int occupied;
+};
 
 #endif /* seats_hpp */
