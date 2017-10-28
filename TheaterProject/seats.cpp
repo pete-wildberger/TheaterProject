@@ -8,10 +8,14 @@
 
 #include "seats.hpp"
 
-Seat::Seat(float a, int b, int c, int d)
+
+class Seat
 {
-    price = a;
-    row = b;
-    column = c;
-    occupied = d;
-}
+public:
+
+    float price;
+    int row;
+    int column;
+    int occupied;
+    
+};

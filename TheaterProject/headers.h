@@ -11,3 +11,4 @@
 
 
 #endif /* headers_h */
+float askPrice();
