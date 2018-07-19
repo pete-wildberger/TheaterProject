@@ -10,3 +10,12 @@
 #define seats_hpp
 
 #endif /* seats_hpp */
+//Seat {
+//    void setSeat(float, int, int, int);
+//    float price;
+//    int row;
+//    int column;
+//    int occupied;
+//    
+//};
+//

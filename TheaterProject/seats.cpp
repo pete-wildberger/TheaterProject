@@ -9,20 +9,20 @@
 #include "seats.hpp"
 
 
-class Seat
-{
-public:
-    float price;
-    int row;
-    int column;
-    int occupied;
-    
+
+
+class Seat {
+    public:
+        float price;
+        int row;
+        int column;
+        int occupied;
+        void setSeat(float a, int b, int c, int d){
+            price = a;
+            row = b;
+            column = c;
+            occupied = d;
+        }
 };
-//
-//    Seat::Seat(float a, int b, int c, int d)
-//    {
-//        price = a;
-//        row = b;
-//        column = c;
-//        occupied = d;
-//    }
+
+
